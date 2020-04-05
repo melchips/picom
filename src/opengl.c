@@ -455,7 +455,7 @@ static inline bool glx_init_frag_shader_corners(glx_round_pass_t *ppass,
 		pc += strlen(pc);
 		assert(strlen(shader_str) < len);
 
-		sprintf(pc, SHADER_STR);
+		sprintf(pc, "%s", SHADER_STR);
 		assert(strlen(shader_str) < len);
 #ifdef DEBUG_GLX
 		log_debug("Generated rounded corners shader %d:\n%s\n", shader_idx, shader_str);
